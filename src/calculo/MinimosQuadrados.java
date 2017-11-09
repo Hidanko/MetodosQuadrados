@@ -34,7 +34,7 @@ public class MinimosQuadrados {
             matrizParcial[0][i] = 1.0;
             matrizParcial[1][i] = x[i];
         }
-    }
+    } 
 
     public MinimosQuadrados() {
     }

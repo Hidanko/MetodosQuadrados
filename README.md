@@ -1,1 +1,1 @@
-# Metodos Quadrados
+# Newton Polynomial Interpolation
