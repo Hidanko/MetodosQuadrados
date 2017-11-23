@@ -64,7 +64,6 @@ public class principal extends javax.swing.JFrame {
         labelPontos = new javax.swing.JLabel();
         numPontos = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        ButtonEx2 = new javax.swing.JButton();
         ButtonEx3 = new javax.swing.JButton();
         ButtonEx3b = new javax.swing.JButton();
         ButtonEx4 = new javax.swing.JButton();
@@ -76,16 +75,26 @@ public class principal extends javax.swing.JFrame {
         getContentPane().setLayout(new java.awt.BorderLayout());
 
         x1.setText("-1");
+        x1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x1ActionPerformed(evt);
+            }
+        });
 
-        f1.setText("4");
+        f1.setText("0");
 
         x2.setText("0");
 
-        f2.setText("1");
+        f2.setText("-1");
 
-        x3.setText("2");
+        x3.setText("1");
+        x3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                x3ActionPerformed(evt);
+            }
+        });
 
-        f3.setText("-1");
+        f3.setText("0");
 
         busca.setText("0.666");
 
@@ -97,9 +106,9 @@ public class principal extends javax.swing.JFrame {
 
         jLabel1.setText("X :");
 
-        x4.setText("0");
+        x4.setText("2");
 
-        f4.setText("0");
+        f4.setText("7");
 
         x5.setText("0");
 
@@ -132,15 +141,7 @@ public class principal extends javax.swing.JFrame {
 
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
 
-        ButtonEx2.setText("Ex 2");
-        ButtonEx2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ButtonEx2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(ButtonEx2);
-
-        ButtonEx3.setText("Ex 3");
+        ButtonEx3.setText("A");
         ButtonEx3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonEx3ActionPerformed(evt);
@@ -148,7 +149,7 @@ public class principal extends javax.swing.JFrame {
         });
         jPanel2.add(ButtonEx3);
 
-        ButtonEx3b.setText("Ex3_b");
+        ButtonEx3b.setText("B");
         ButtonEx3b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonEx3bActionPerformed(evt);
@@ -156,7 +157,7 @@ public class principal extends javax.swing.JFrame {
         });
         jPanel2.add(ButtonEx3b);
 
-        ButtonEx4.setText("Ex 4");
+        ButtonEx4.setText("C");
         ButtonEx4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonEx4ActionPerformed(evt);
@@ -172,7 +173,7 @@ public class principal extends javax.swing.JFrame {
             }
         });
 
-        ButtonEx4b.setText("Ex4_b");
+        ButtonEx4b.setText("D");
         ButtonEx4b.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ButtonEx4bActionPerformed(evt);
@@ -241,7 +242,7 @@ public class principal extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(busca, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(labelResultado))
                 .addGap(10, 20, Short.MAX_VALUE))
@@ -294,7 +295,7 @@ public class principal extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
@@ -418,29 +419,6 @@ public class principal extends javax.swing.JFrame {
         SliderNum.setValue(2);
     }//GEN-LAST:event_ButtonEx3ActionPerformed
 
-    private void ButtonEx2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEx2ActionPerformed
-        x1.setText("500");
-        f1.setText("2.74");
-        x2.setText("1000");
-        f2.setText("5.48");
-        x3.setText("1500");
-        f3.setText("7.9");
-        x4.setText("2000");
-        f4.setText("11");
-        x5.setText("2500");
-        f5.setText("13.93");
-        x6.setText("3000");
-        f6.setText("16.43");
-        x7.setText("3500");
-        f7.setText("20.24");
-        x8.setText("4000");
-        f8.setText("23.52");
-
-        busca.setText("3200");
-
-        SliderNum.setValue(8);
-    }//GEN-LAST:event_ButtonEx2ActionPerformed
-
     private void SliderNumStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_SliderNumStateChanged
         numPontos.setText(SliderNum.getValue() + " pontos.");
     }//GEN-LAST:event_SliderNumStateChanged
@@ -467,6 +445,14 @@ public class principal extends javax.swing.JFrame {
 
         SliderNum.setValue(4);
     }//GEN-LAST:event_ButtonEx4bActionPerformed
+
+    private void x1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_x1ActionPerformed
+
+    private void x3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_x3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -504,7 +490,6 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonEx2;
     private javax.swing.JButton ButtonEx3;
     private javax.swing.JButton ButtonEx3b;
     private javax.swing.JButton ButtonEx4;

@@ -106,7 +106,7 @@
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="busca" min="-2" pref="47" max="-2" attributes="0"/>
-                              <EmptySpace pref="38" max="32767" attributes="0"/>
+                              <EmptySpace pref="167" max="32767" attributes="0"/>
                               <Component id="jButton1" min="-2" pref="188" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -176,7 +176,7 @@
                           <Component id="jButton1" min="-2" pref="55" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                  <EmptySpace pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -186,10 +186,13 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="-1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="x1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="f1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4"/>
+            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="x2">
@@ -199,17 +202,20 @@
         </Component>
         <Component class="javax.swing.JTextField" name="f2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1"/>
+            <Property name="text" type="java.lang.String" value="-1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="x3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2"/>
+            <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="x3ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="f3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="-1"/>
+            <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="busca">
@@ -239,12 +245,12 @@
         </Component>
         <Component class="javax.swing.JTextField" name="x4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="0"/>
+            <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="f4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="0"/>
+            <Property name="text" type="java.lang.String" value="7"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="x5">
@@ -311,17 +317,9 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="ButtonEx2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Ex 2"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonEx2ActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JButton" name="ButtonEx3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Ex 3"/>
+                <Property name="text" type="java.lang.String" value="A"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonEx3ActionPerformed"/>
@@ -329,7 +327,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="ButtonEx3b">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Ex3_b"/>
+                <Property name="text" type="java.lang.String" value="B"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonEx3bActionPerformed"/>
@@ -337,7 +335,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="ButtonEx4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Ex 4"/>
+                <Property name="text" type="java.lang.String" value="C"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonEx4ActionPerformed"/>
@@ -358,7 +356,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="ButtonEx4b">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Ex4_b"/>
+            <Property name="text" type="java.lang.String" value="D"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonEx4bActionPerformed"/>
