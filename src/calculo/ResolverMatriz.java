@@ -13,14 +13,14 @@ import static java.lang.Math.pow;
  */
 public class ResolverMatriz {
 
-    double I;
-    double J;
+    int I; //linha
+    int J; //coluna
     double matriz[][];
-    double posME;
+    int posME;
     int TAM;
     double maiorE;
 
-    public ResolverMatriz(double I, double J, double[][] matriz, double posME, int TAM) {
+    public ResolverMatriz(int I, int J, double[][] matriz, int posME, int TAM) {
         this.I = I;
         this.J = J;
         this.matriz = matriz;
@@ -32,11 +32,12 @@ public class ResolverMatriz {
     
 
 
-    void limparMatriz(double matriz){
-	for (int i = 0; i < I; i++) {
-            for (int j = 0; j < J; j++) {
-                if (matriz[i][j] < pow(10, -10) && matriz[i][j] > -1) {
-                    matriz[i][j] = 0;
+    void limparMatriz(double matriz[][]){
+	for (int i = 0; i < I; i++) { //itera até chegar ao ultimo elemento da linha
+            for (int j = 0; j < J; j++) { //itera até o ultimo elemento da coluna
+              
+                if (matriz[i][j] < pow(10, -10.0) && matriz[i][j] > -1.0) {
+                    matriz[i][j] = 0.0;
                 }
             }
         }
@@ -53,10 +54,10 @@ public class ResolverMatriz {
         }
     }
 
-    void pivotear() {
+    void pivotear(double matriz[][], int i, int j) {
         
 	// onde maiorE é o maior elemento e posME é sua posição
-        int posME = (int) I;
+       //int posME = (int) I;
         for (int a = i; a < I; a++) {
 
             if (a == I) {
@@ -77,7 +78,7 @@ public class ResolverMatriz {
         for (int k = 0; k < J; k++) {
             // Variavel para guardar o elemento temporariamente
             double temp;
-
+                        
             temp = matriz[i][k];
             matriz[i][k] = matriz[posME][k];
             matriz[posME][k] = temp;
@@ -88,7 +89,7 @@ public class ResolverMatriz {
 
 //==========================================================
 //					INICIO DOS MÉTODOS
-    void escalona(double matriz){
+    void escalona(double matriz[][]){
 
 	double pivo, multiplicador;
 
@@ -120,9 +121,9 @@ public class ResolverMatriz {
     }
 
 //Função para calcular os valores das variaveis de uma matriz escalonada
-    void raizes(double matriz,double x){
+    void raizes(double matriz[][],double x){
 	
-	double raizes[] = new double[J];
+     	double raizes[] = new double[J];
 
         // Preenche o vetor das raizes
         for (int i = 0; i < J; i++) {
